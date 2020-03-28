@@ -1,37 +1,34 @@
 <template>
-  <div class="column">
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title has-text-grey">
-          {{ title }}
-        </p>
-      </header>
-      <div class="card-content">
-        <div class="content has-text-centered">
-          <b-icon :icon="icon" size="is-large" type="is-primary" />
-        </div>
-      </div>
-      <footer class="card-footer">
-        <div class="card-footer-item">
-          <span>
-            <slot />
-          </span>
-        </div>
-      </footer>
-    </div>
-  </div>
+  <nuxt-link
+    :to="{
+      name: 'blog-slug',
+      params: {
+        sys: id
+      }
+    }"
+    class="wrapper"
+  >
+    <article class="card">
+      <h1 class="card_title">{{ title }}</h1>
+      <p class="card_text">{{ id }}</p>
+      <p class="card_date">{{ date }}</p>
+    </article>
+  </nuxt-link>
 </template>
-
 <script>
 export default {
   props: {
     title: {
       type: String,
-      required: true
+      default: ''
     },
-    icon: {
+    id: {
       type: String,
-      required: true
+      default: ''
+    },
+    date: {
+      type: String,
+      default: ''
     }
   }
 }
