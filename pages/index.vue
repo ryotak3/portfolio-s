@@ -5,7 +5,7 @@
       <h4 class="title is-2">My works</h4>
     </div>
     <div class="columns is-mobile is-centered">
-      <div class="column is-half">
+      <div class="column is-two-thirds">
         <card
           v-for="(post, i) in posts"
           :id="post.sys.id"
