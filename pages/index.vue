@@ -4,14 +4,14 @@
     <div class="section-heading">
       <h4 class="title is-2">My works</h4>
     </div>
-    <div class="columns body-columns">
-      <div class="column is-half is-offset-one-quarter">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-half">
         <card
           v-for="(post, i) in posts"
           :id="post.sys.id"
           :key="i"
           :title="post.fields.title"
-          :date="post.sys.updatedAt"
+          :date="post.sys.updateAt | moment('YYYY-MM-DD')"
           :imgsrc="post.fields.image.fields.file.url"
         />
       </div>
@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 import Card from '~/components/Card.vue'
 import { createClient } from '~/plugins/contentful.js'
 
@@ -29,11 +30,15 @@ export default {
   components: {
     Card
   },
+  filters: {
+    moment(value, format) {
+      return moment(value).format(format)
+    }
+  },
   asyncData({ env, params }) {
     return client
       .getEntries(env.CTF_BLOG_POST_TYPE_ID)
       .then((entries) => {
-        debugger
         return {
           posts: entries.items
         }
