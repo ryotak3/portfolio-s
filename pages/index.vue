@@ -1,5 +1,5 @@
 <template>
-  <section class="index">
+  <section id="myworks" class="section">
     <!-- Title -->
     <div class="section-heading">
       <h4 class="title is-2">My works</h4>
