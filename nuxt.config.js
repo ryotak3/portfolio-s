@@ -6,7 +6,7 @@ const ctfConfig = getConfigForKeys([
   'CTF_CDA_ACCESS_TOKEN'
 ])
 
-const { createClient } = require('./plugins/contentful')
+const { createClient } = require('./plugins/contentful.js')
 const cdaClient = createClient(ctfConfig)
 
 module.exports = {
