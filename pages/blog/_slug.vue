@@ -7,6 +7,7 @@
     <div>
       {{ article.fields.body.content[0].content[0].value }}
     </div>
+    <div></div>
   </section>
 </template>
 <script>

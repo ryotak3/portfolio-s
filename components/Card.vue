@@ -1,19 +1,29 @@
 <template>
-  <nuxt-link
-    :to="{
-      name: 'blog-slug',
-      params: {
-        sys: id
-      }
-    }"
-    class="wrapper"
-  >
-    <article class="card">
-      <h1 class="card_title">{{ title }}</h1>
-      <p class="card_text">{{ id }}</p>
-      <p class="card_date">{{ date }}</p>
-    </article>
-  </nuxt-link>
+  <div style="margin-top:2rem;">
+    <nuxt-link
+      :to="{
+        name: 'blog-slug',
+        params: {
+          sys: id
+        }
+      }"
+      class="wrapper"
+    >
+      <article class="card block">
+        <div class="card-header">
+          <p class="card-header-title">{{ title }}</p>
+        </div>
+        <div class="card-image">
+          <figure class="image">
+            <img :src="imgsrc" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <p class="card_date">{{ date }}</p>
+        </div>
+      </article>
+    </nuxt-link>
+  </div>
 </template>
 <script>
 export default {
@@ -27,6 +37,10 @@ export default {
       default: ''
     },
     date: {
+      type: String,
+      default: ''
+    },
+    imgsrc: {
       type: String,
       default: ''
     }
