@@ -3,16 +3,18 @@
     <b-navbar class="is-link is-fixed-top">
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <p>K's Portfolio</p>
+          <p>weekendcycler</p>
         </b-navbar-item>
       </template>
       <template slot="end">
-        <b-navbar-item href="/">
-          My works
-        </b-navbar-item>
-        <b-navbar-item href="/about">
-          About
-        </b-navbar-item>
+        <b-navbar-item href="/">PHOTOGRAPHY</b-navbar-item>
+        <b-navbar-item href="http://weekendcycler.hateblo.jp/"
+          >BLOG</b-navbar-item
+        >
+        <b-navbar-item href="https://weekenders.fm/">PODCAST</b-navbar-item>
+        <b-navbar-item href="/">BIOGRAPHY</b-navbar-item>
+        <b-navbar-item href="/about">ABOUT</b-navbar-item>
+        <b-navbar-item href="/about">CONTACT</b-navbar-item>
       </template>
     </b-navbar>
 
@@ -40,7 +42,7 @@ export default {
           to: { name: 'inspire' }
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
