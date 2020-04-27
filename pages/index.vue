@@ -8,58 +8,33 @@
       <b-tab-item label="風景">
         <div class="columns is-mobile is-centered">
           <div class="column is-two-thirds">
-            <card
-              v-for="(post, i) in posts"
-              :id="post.sys.id"
-              :key="i"
-              :title="post.fields.title"
-              :date="post.sys.updateAt | moment('YYYY-MM-DD')"
-              :imgsrc="post.fields.image.fields.file.url"
-            />
+            <template v-for="(post, i) in posts">
+              <card
+                v-if="post.fields"
+                :id="post.sys.id"
+                :key="i"
+                :title="post.fields.title"
+                :date="post.sys.createdAt | moment('YYYY-MM-DD')"
+                :imgsrc="post.fields.image.fields.file.url"
+              />
+            </template>
           </div>
         </div>
       </b-tab-item>
 
       <b-tab-item label="ライブ">
         <div class="columns is-mobile is-centered">
-          <div class="column is-two-thirds">
-            <card
-              v-for="(post, i) in posts"
-              :id="post.sys.id"
-              :key="i"
-              :title="post.fields.title"
-              :date="post.sys.updateAt | moment('YYYY-MM-DD')"
-              :imgsrc="post.fields.image.fields.file.url"
-            />
-          </div>
+          <div class="column is-two-thirds"></div>
         </div>
       </b-tab-item>
       <b-tab-item label="ブライダル">
         <div class="columns is-mobile is-centered">
-          <div class="column is-two-thirds">
-            <card
-              v-for="(post, i) in posts"
-              :id="post.sys.id"
-              :key="i"
-              :title="post.fields.title"
-              :date="post.sys.updateAt | moment('YYYY-MM-DD')"
-              :imgsrc="post.fields.image.fields.file.url"
-            />
-          </div>
+          <div class="column is-two-thirds"></div>
         </div>
       </b-tab-item>
       <b-tab-item label="ストリートスナップ">
         <div class="columns is-mobile is-centered">
-          <div class="column is-two-thirds">
-            <card
-              v-for="(post, i) in posts"
-              :id="post.sys.id"
-              :key="i"
-              :title="post.fields.title"
-              :date="post.sys.updateAt | moment('YYYY-MM-DD')"
-              :imgsrc="post.fields.image.fields.file.url"
-            />
-          </div>
+          <div class="column is-two-thirds"></div>
         </div>
       </b-tab-item>
     </b-tabs>
@@ -84,7 +59,7 @@ export default {
   },
   asyncData({ env, params }) {
     return client
-      .getEntries(env.CTF_BLOG_POST_TYPE_ID)
+      .getEntries({ content_type: env.CTF_BLOG_POST_TYPE_ID })
       .then((entries) => {
         return {
           posts: entries.items
