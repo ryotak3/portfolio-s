@@ -10,16 +10,10 @@
       class="wrapper"
     >
       <article class="card block">
-        <div class="card-header">
-          <p class="card-header-title">{{ title }}</p>
-        </div>
         <div class="card-image">
           <figure class="image">
             <img :src="imgsrc" />
           </figure>
-        </div>
-        <div class="card-content">
-          <p class="card_date">{{ date }}</p>
         </div>
       </article>
     </nuxt-link>
@@ -45,5 +39,5 @@ export default {
       default: ''
     }
   }
-}
+};
 </script>

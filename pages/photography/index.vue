@@ -1,17 +1,15 @@
 <template>
   <section id="myworks" class="section">
-    <div class="columns is-mobile is-centered">
-      <div class="column is-two-thirds">
-        <template v-for="(post, i) in posts">
-          <card
-            v-if="post.fields"
-            :id="post.sys.id"
-            :key="i"
-            :title="post.fields.title"
-            :date="post.sys.createdAt | moment('YYYY-MM-DD')"
-            :imgsrc="post.fields.image.fields.file.url"
-          />
-        </template>
+    <div class="columns is-mobile is-centered is-multiline">
+      <div v-for="(post, i) in posts" :key="i" class="column is-4">
+        <card
+          v-if="post.fields"
+          :id="post.sys.id"
+          :key="i"
+          :title="post.fields.title"
+          :date="post.sys.createdAt | moment('YYYY-MM-DD')"
+          :imgsrc="post.fields.image.fields.file.url"
+        />
       </div>
     </div>
   </section>

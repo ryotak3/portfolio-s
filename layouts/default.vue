@@ -7,12 +7,18 @@
         </b-navbar-item>
       </template>
       <template slot="end">
-        <b-navbar-item href="/">PHOTOGRAPHY</b-navbar-item>
+        <b-navbar-dropdown label="PHOTOGRAPHY">
+          <b-navbar-item href="/photography">portrait</b-navbar-item>
+          <b-navbar-item href="/photography">street</b-navbar-item>
+          <b-navbar-item href="/photography">landscape</b-navbar-item>
+          <b-navbar-item href="/photography">cycling</b-navbar-item>
+          <b-navbar-item href="/photography">live</b-navbar-item>
+        </b-navbar-dropdown>
         <b-navbar-item href="http://weekendcycler.hateblo.jp/"
           >BLOG</b-navbar-item
         >
         <b-navbar-item href="https://weekenders.fm/">PODCAST</b-navbar-item>
-        <b-navbar-item href="/">BIOGRAPHY</b-navbar-item>
+        <b-navbar-item href="/biography">BIOGRAPHY</b-navbar-item>
         <b-navbar-item href="/about">ABOUT</b-navbar-item>
         <b-navbar-item href="/about">CONTACT</b-navbar-item>
       </template>
@@ -46,3 +52,12 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+body {
+  background-color: #222222;
+  color: #ffffff;
+}
+nav.navbar.is-fixed-top {
+  background: transparent;
+}
+</style>
