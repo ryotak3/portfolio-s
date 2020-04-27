@@ -11,9 +11,7 @@
         </figure>
       </div>
       <div class="card-content">
-        <div>
-          {{ article.fields.body.content[0].content[0].value }}
-        </div>
+        <div>{{ article.fields.body.content[0].content[0].value }}</div>
         <p class="slug_date">
           {{ article.sys.updateAt | moment('YYYY-MM-DD') }}
         </p>
@@ -22,14 +20,14 @@
   </section>
 </template>
 <script>
-import moment from 'moment'
-import { createClient } from '~/plugins/contentful.js'
+import moment from 'moment';
+import { createClient } from '~/plugins/contentful.js';
 
-const client = createClient()
+const client = createClient();
 export default {
   filters: {
     moment(value, format) {
-      return moment(value).format(format)
+      return moment(value).format(format);
     }
   },
   props: {
@@ -42,12 +40,12 @@ export default {
   async asyncData({ env, params }) {
     return await client
       .getEntry(params.sys)
-      .then((entrie) => {
+      .then(entrie => {
         return {
           article: entrie
-        }
+        };
       })
-      .catch(console.error)
+      .catch(console.error);
   }
-}
+};
 </script>

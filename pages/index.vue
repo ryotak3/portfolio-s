@@ -1,33 +1,30 @@
 <template>
   <section id="myworks" class="section">
-    <div class="columns is-mobile is-centered">
-      <div class="column is-two-thirds">
-        <template v-for="(post, i) in posts">
-          <card
-            v-if="post.fields"
-            :id="post.sys.id"
-            :key="i"
-            :title="post.fields.title"
-            :date="post.sys.createdAt | moment('YYYY-MM-DD')"
-            :imgsrc="post.fields.image.fields.file.url"
-          />
-        </template>
-      </div>
-    </div>
+    <b-carousel
+      v-model="carousel"
+      :pause-hover="false"
+      :autoplay="true"
+      :repeat="true"
+      :interval="interval"
+      :animated="animated"
+      :indicator="false"
+    >
+      <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+        <span class="image">
+          <img :src="carousel.img" />
+        </span>
+      </b-carousel-item>
+    </b-carousel>
   </section>
 </template>
 
 <script>
 import moment from 'moment';
-import Card from '~/components/Card.vue';
 import { createClient } from '~/plugins/contentful.js';
 
 const client = createClient();
 export default {
   transition: 'slide-left',
-  components: {
-    Card
-  },
   filters: {
     moment(value, format) {
       return moment(value).format(format);
@@ -42,6 +39,20 @@ export default {
         };
       })
       .catch(console.error);
+  },
+  data() {
+    return {
+      carousels: [
+        { img: 'street.jpg' },
+        { img: 'portrait.jpg' },
+        { img: 'landscape.jpg' },
+        { img: 'cycling.jpg' },
+        { img: 'live.jpg' }
+      ],
+      pauseType: 'is-primary',
+      interval: 5000,
+      animated: 'fade'
+    };
   }
 };
 </script>

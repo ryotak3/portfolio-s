@@ -14,9 +14,9 @@
           <b-navbar-item href="/photography">cycling</b-navbar-item>
           <b-navbar-item href="/photography">live</b-navbar-item>
         </b-navbar-dropdown>
-        <b-navbar-item href="http://weekendcycler.hateblo.jp/"
-          >BLOG</b-navbar-item
-        >
+        <b-navbar-item href="http://weekendcycler.hateblo.jp/">
+          BLOG
+        </b-navbar-item>
         <b-navbar-item href="https://weekenders.fm/">PODCAST</b-navbar-item>
         <b-navbar-item href="/biography">BIOGRAPHY</b-navbar-item>
         <b-navbar-item href="/about">ABOUT</b-navbar-item>
