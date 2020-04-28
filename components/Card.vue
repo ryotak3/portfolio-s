@@ -1,23 +1,20 @@
 <template>
-  <div style="margin-top:2rem;">
-    <nuxt-link
-      :to="{
-        name: 'blog-slug',
-        params: {
-          sys: id
-        }
-      }"
-      class="wrapper"
-    >
+  <section>
+    <div style="margin-top:2rem;">
       <article class="card block">
         <div class="card-image">
-          <figure class="image">
-            <img :src="imgsrc" />
+          <figure class="image is-fullheight">
+            <img :src="imgsrc" @click="isImageModal = true" />
           </figure>
         </div>
       </article>
-    </nuxt-link>
-  </div>
+    </div>
+    <b-modal :active.sync="isImageModal">
+      <p class="image">
+        <img class="modalimg" :src="imgsrc" />
+      </p>
+    </b-modal>
+  </section>
 </template>
 <script>
 export default {
@@ -38,6 +35,18 @@ export default {
       type: String,
       default: ''
     }
+  },
+  data() {
+    return {
+      isImageModal: false
+    };
   }
 };
 </script>
+<style scoped>
+.modalimg {
+  width: auto;
+  height: 80vh;
+  margin: auto;
+}
+</style>
