@@ -20,8 +20,6 @@ import moment from 'moment';
 import Card from '~/components/Card.vue';
 import { createClient } from '~/plugins/contentful.js';
 
-// const PHOTO_CATEGORY = ['street', 'portrait', 'landscape', 'cycling', 'live'];
-
 const client = createClient();
 export default {
   transition: 'slide-left',

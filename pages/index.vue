@@ -49,7 +49,8 @@ export default {
         { category: 'portrait', img: 'portrait.jpg' },
         { category: 'landscape', img: 'landscape.jpg' },
         { category: 'cycling', img: 'cycling.jpg' },
-        { category: 'live', img: 'live.jpg' }
+        { category: 'live', img: 'live.jpg' },
+        { category: 'stilllife', img: 'stilllife.jpg' }
       ],
       pauseType: 'is-primary',
       interval: 5000,

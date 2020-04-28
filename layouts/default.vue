@@ -15,6 +15,9 @@
           </b-navbar-item>
           <b-navbar-item href="/photography?v=cycling">cycling</b-navbar-item>
           <b-navbar-item href="/photography?v=live">live</b-navbar-item>
+          <b-navbar-item href="/photography?v=stilllife">
+            still life
+          </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-item href="http://weekendcycler.hateblo.jp/">
           BLOG
