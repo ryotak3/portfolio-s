@@ -1,14 +1,14 @@
-const pkg = require('./package')
-const { getConfigForKeys } = require('./lib/config.js')
+const pkg = require('./package');
+const { getConfigForKeys } = require('./lib/config.js');
 const ctfConfig = getConfigForKeys([
   'CTF_BLOG_POST_TYPE_ID',
   'CTF_TAG_TYPE_ID',
   'CTF_SPACE_ID',
   'CTF_CDA_ACCESS_TOKEN'
-])
+]);
 
-const { createClient } = require('./plugins/contentful.js')
-const cdaClient = createClient(ctfConfig)
+const { createClient } = require('./plugins/contentful.js');
+const cdaClient = createClient(ctfConfig);
 
 module.exports = {
   mode: 'universal',
@@ -17,7 +17,7 @@ module.exports = {
    */
   head: {
     // title: process.env.npm_package_name || '',
-    title: "K's Portfolio",
+    title: 'weekendcycler',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -50,9 +50,9 @@ module.exports = {
     routes() {
       return cdaClient
         .getEntries(ctfConfig.CTF_BLOG_POST_TYPE_ID)
-        .then((entries) => {
-          return [...entries.items.map((entry) => `/blog/${entry.fields.slug}`)]
-        })
+        .then(entries => {
+          return [...entries.items.map(entry => `/blog/${entry.fields.slug}`)];
+        });
     }
   },
   env: {
@@ -92,4 +92,4 @@ module.exports = {
      */
     extend(config, ctx) {}
   }
-}
+};
