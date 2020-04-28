@@ -8,11 +8,13 @@
       </template>
       <template slot="end">
         <b-navbar-dropdown label="PHOTOGRAPHY">
-          <b-navbar-item href="/photography">portrait</b-navbar-item>
-          <b-navbar-item href="/photography">street</b-navbar-item>
-          <b-navbar-item href="/photography">landscape</b-navbar-item>
-          <b-navbar-item href="/photography">cycling</b-navbar-item>
-          <b-navbar-item href="/photography">live</b-navbar-item>
+          <b-navbar-item href="/photography?v=portrait">portrait</b-navbar-item>
+          <b-navbar-item href="/photography?v=street">street</b-navbar-item>
+          <b-navbar-item href="/photography?v=landscape">
+            landscape
+          </b-navbar-item>
+          <b-navbar-item href="/photography?v=cycling">cycling</b-navbar-item>
+          <b-navbar-item href="/photography?v=live">live</b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-item href="http://weekendcycler.hateblo.jp/">
           BLOG
