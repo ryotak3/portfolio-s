@@ -10,7 +10,6 @@
   >
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
       <a class="image vwmax" @click="goPhotography(carousel.category)">
-        <!-- <img :src="carousel.img" /> -->
         <img v-lazy="carousel" alt="" />
       </a>
     </b-carousel-item>
@@ -20,7 +19,6 @@
 <script>
 import moment from 'moment';
 import { createClient } from '~/plugins/contentful.js';
-// import loading from '~/assets/loader.gif';
 
 const client = createClient();
 export default {

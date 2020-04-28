@@ -2,9 +2,9 @@
   <section>
     <div style="margin-top:2rem;">
       <article class="card block">
-        <div class="card-image">
+        <div class="card-image" @click="isImageModal = true">
           <figure class="image">
-            <img :src="imgsrc" @click="isImageModal = true" />
+            <img v-lazy="imgObj" alt="" />
           </figure>
         </div>
       </article>
@@ -38,12 +38,18 @@ export default {
   },
   data() {
     return {
-      isImageModal: false
+      isImageModal: false,
+      imgObj: {
+        src: this.imgsrc
+      }
     };
   }
 };
 </script>
 <style scoped>
+.card {
+  background-color: #222222;
+}
 .modalimg {
   width: auto;
   max-height: 80vh;
