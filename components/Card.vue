@@ -10,9 +10,9 @@
       </article>
     </div>
     <b-modal :active.sync="isImageModal">
-      <p class="image">
+      <figure class="image">
         <img class="modalimg" :src="imgsrc" />
-      </p>
+      </figure>
     </b-modal>
   </section>
 </template>
@@ -46,7 +46,7 @@ export default {
 <style scoped>
 .modalimg {
   width: auto;
-  height: 80vh;
+  max-height: 80vh;
   margin: auto;
 }
 </style>
