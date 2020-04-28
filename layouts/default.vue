@@ -81,8 +81,7 @@ body {
 
 p {
   font-family: 'Avenir', 'Corbel', '游明朝', 'YuMincho',
-    'Hiragino Mincho ProN W3', 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN',
-    'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+    'Hiragino Mincho ProN W3', 'ヒラギノ明朝 ProN W3';
 }
 nav.navbar.is-fixed-top {
   background: transparent;
