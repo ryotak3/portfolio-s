@@ -10,7 +10,8 @@
   >
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
       <a class="image vwmax" @click="goPhotography(carousel.category)">
-        <img :src="carousel.img" />
+        <!-- <img :src="carousel.img" /> -->
+        <img v-lazy="carousel" alt="" />
       </a>
     </b-carousel-item>
   </b-carousel>
@@ -19,6 +20,7 @@
 <script>
 import moment from 'moment';
 import { createClient } from '~/plugins/contentful.js';
+import loading from '~/assets/loader.gif';
 
 const client = createClient();
 export default {
@@ -41,12 +43,12 @@ export default {
   data() {
     return {
       carousels: [
-        { category: 'street', img: 'street.jpg' },
-        { category: 'portrait', img: 'portrait.jpg' },
-        { category: 'landscape', img: 'landscape.jpg' },
-        { category: 'cycling', img: 'cycling.jpg' },
-        { category: 'live', img: 'live.jpg' },
-        { category: 'stilllife', img: 'stilllife.jpg' }
+        { category: 'street', src: 'street.jpg', loading },
+        { category: 'portrait', src: 'portrait.jpg', loading },
+        { category: 'landscape', src: 'landscape.jpg', loading },
+        { category: 'cycling', src: 'cycling.jpg', loading },
+        { category: 'live', src: 'live.jpg', loading },
+        { category: 'stilllife', src: 'stilllife.jpg', loading }
       ],
       pauseType: 'is-primary',
       interval: 5000,
