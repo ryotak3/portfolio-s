@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar class="is-link is-fixed-top">
+    <b-navbar class="is-primary is-fixed-top">
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           <p>weekendcycler</p>
@@ -54,10 +54,9 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-body {
+<style>
+html {
   background-color: #222222;
-  color: #ffffff;
 }
 nav.navbar.is-fixed-top {
   background: transparent;
