@@ -3,7 +3,7 @@
     <div style="margin-top:2rem;">
       <article class="card block">
         <div class="card-image">
-          <figure class="image is-fullheight">
+          <figure class="image">
             <img :src="imgsrc" @click="isImageModal = true" />
           </figure>
         </div>

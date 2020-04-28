@@ -64,8 +64,3 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
-.block {
-  margin: 2rem;
-}
-</style>

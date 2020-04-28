@@ -22,7 +22,7 @@
         <b-navbar-item href="https://weekenders.fm/">PODCAST</b-navbar-item>
         <b-navbar-item href="/biography">BIOGRAPHY</b-navbar-item>
         <b-navbar-item href="/about">ABOUT</b-navbar-item>
-        <b-navbar-item href="/about">CONTACT</b-navbar-item>
+        <b-navbar-item href="mailto:xxx@gmail.com">CONTACT</b-navbar-item>
         <b-navbar-item href="https://twitter.com/weekendcycler">
           <i class="fab fa-twitter"></i>
         </b-navbar-item>
@@ -69,6 +69,17 @@ export default {
 <style>
 html {
   background-color: #222222;
+  font-size: 1rem;
+}
+
+body {
+  color: #ffffff;
+}
+
+p {
+  font-family: 'Avenir', 'Corbel', '游明朝', 'YuMincho',
+    'Hiragino Mincho ProN W3', 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN',
+    'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
 }
 nav.navbar.is-fixed-top {
   background: transparent;

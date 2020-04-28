@@ -63,8 +63,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.block {
-  margin: 2rem;
-}
-</style>
