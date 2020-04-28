@@ -22,7 +22,13 @@
         <b-navbar-item href="https://weekenders.fm/">PODCAST</b-navbar-item>
         <b-navbar-item href="/biography">BIOGRAPHY</b-navbar-item>
         <b-navbar-item href="/about">ABOUT</b-navbar-item>
-        <b-navbar-item href="/about">CONTACT</b-navbar-item>
+        <b-navbar-item href="/contact">CONTACT</b-navbar-item>
+        <b-navbar-item href="/about">
+          <b-icon icon="twitter"></b-icon>
+          <b-icon icon="instagram"></b-icon>
+          <i class="fab fa-flickr"></i>
+          <i class="fab fa-500px"></i>
+        </b-navbar-item>
       </template>
     </b-navbar>
 

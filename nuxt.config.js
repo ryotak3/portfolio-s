@@ -36,7 +36,13 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['~/assets/style.scss'],
+  css: [
+    '~/assets/style.scss',
+    '@fortawesome/fontawesome-free-webfonts',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -83,6 +89,14 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
+  },
   /*
    ** Build configuration
    */
