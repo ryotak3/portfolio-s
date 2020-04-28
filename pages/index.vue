@@ -11,7 +11,9 @@
     >
       <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
         <span class="image">
-          <img :src="carousel.img" />
+          <a class="image " @click="goPhotography(carousel.category)">
+            <img :src="carousel.img" />
+          </a>
         </span>
       </b-carousel-item>
     </b-carousel>
@@ -43,16 +45,21 @@ export default {
   data() {
     return {
       carousels: [
-        { img: 'street.jpg' },
-        { img: 'portrait.jpg' },
-        { img: 'landscape.jpg' },
-        { img: 'cycling.jpg' },
-        { img: 'live.jpg' }
+        { category: 'street', img: 'street.jpg' },
+        { category: 'portrait', img: 'portrait.jpg' },
+        { category: 'landscape', img: 'landscape.jpg' },
+        { category: 'cycling', img: 'cycling.jpg' },
+        { category: 'live', img: 'live.jpg' }
       ],
       pauseType: 'is-primary',
       interval: 5000,
       animated: 'fade'
     };
+  },
+  methods: {
+    goPhotography(index) {
+      this.$router.push({ path: `/photography/`, query: { v: index } });
+    }
   }
 };
 </script>

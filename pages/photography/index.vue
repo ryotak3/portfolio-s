@@ -1,7 +1,7 @@
 <template>
   <section id="myworks" class="section">
     <div class="columns is-mobile is-centered is-multiline">
-      <div v-for="(post, i) in posts" :key="i" class="column is-4">
+      <div v-for="(post, i) in filteredPosts" :key="i" class="column is-4">
         <card
           v-if="post.fields"
           :id="post.sys.id"
@@ -19,6 +19,8 @@
 import moment from 'moment';
 import Card from '~/components/Card.vue';
 import { createClient } from '~/plugins/contentful.js';
+
+// const PHOTO_CATEGORY = ['street', 'portrait', 'landscape', 'cycling', 'live'];
 
 const client = createClient();
 export default {
@@ -40,10 +42,29 @@ export default {
         };
       })
       .catch(console.error);
+  },
+  data() {
+    return {
+      categoryId: this.$route.query.v
+    };
+  },
+  computed: {
+    filteredPosts() {
+      if (!this.categoryId) return this.posts;
+      return this.posts.filter(post => {
+        if (post.fields.tags) {
+          for (const tag of post.fields.tags) {
+            if (tag.fields.slug === this.categoryId) {
+              return true;
+            }
+          }
+        }
+      });
+    }
   }
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .block {
   margin: 2rem;
 }
