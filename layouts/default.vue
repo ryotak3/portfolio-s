@@ -27,16 +27,16 @@
         <b-navbar-item href="/about">ABOUT</b-navbar-item>
         <b-navbar-item href="mailto:xxx@gmail.com">CONTACT</b-navbar-item>
         <b-navbar-item href="https://twitter.com/weekendcycler">
-          <i class="fab fa-twitter"></i>
+          <b-icon icon="twitter" size="is-small"></b-icon>
         </b-navbar-item>
         <b-navbar-item href="https://www.instagram.com/weekendcycler1015/">
-          <i class="fab fa-instagram"></i>
+          <b-icon icon="instagram" size="is-small"></b-icon>
         </b-navbar-item>
         <b-navbar-item href="https://www.flickr.com/photos/106693263@N04/">
-          <i class="fab fa-flickr"></i>
+          <b-icon icon="image" size="is-small"></b-icon>
         </b-navbar-item>
         <b-navbar-item href="https://500px.com/weekendcycler1015/">
-          <i class="fab fa-500px"></i>
+          <b-icon icon="numeric-5-box" size="is-small"></b-icon>
         </b-navbar-item>
       </template>
     </b-navbar>

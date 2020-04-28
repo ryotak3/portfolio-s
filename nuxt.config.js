@@ -36,13 +36,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    '~/assets/style.scss',
-    '@fortawesome/fontawesome-free-webfonts',
-    '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css',
-    '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
-    '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css'
-  ],
+  css: ['~/assets/style.scss'],
   /*
    ** Plugins to load before mounting the App
    */
