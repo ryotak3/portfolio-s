@@ -1,23 +1,19 @@
 <template>
-  <section id="myworks" class="section">
-    <b-carousel
-      v-model="carousel"
-      :pause-hover="false"
-      :autoplay="true"
-      :repeat="true"
-      :interval="interval"
-      :animated="animated"
-      :indicator="false"
-    >
-      <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-        <span class="image">
-          <a class="image " @click="goPhotography(carousel.category)">
-            <img :src="carousel.img" />
-          </a>
-        </span>
-      </b-carousel-item>
-    </b-carousel>
-  </section>
+  <b-carousel
+    v-model="carousel"
+    :pause-hover="false"
+    :autoplay="true"
+    :repeat="true"
+    :interval="interval"
+    :animated="animated"
+    :indicator="false"
+  >
+    <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+      <a class="image vwmax" @click="goPhotography(carousel.category)">
+        <img :src="carousel.img" />
+      </a>
+    </b-carousel-item>
+  </b-carousel>
 </template>
 
 <script>
@@ -64,3 +60,26 @@ export default {
   }
 };
 </script>
+<style>
+/* 全画面表示のための設定 */
+body {
+  overflow: hidden;
+}
+.vwmax {
+  height: 100vh;
+  width: auto;
+  margin: 0 -500%;
+  padding: 0;
+  overflow: hidden;
+}
+.vwmax img {
+  width: auto;
+  height: 100vh;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
