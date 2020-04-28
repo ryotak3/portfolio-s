@@ -20,7 +20,7 @@
 <script>
 import moment from 'moment';
 import { createClient } from '~/plugins/contentful.js';
-import loading from '~/assets/loader.gif';
+// import loading from '~/assets/loader.gif';
 
 const client = createClient();
 export default {
@@ -43,12 +43,12 @@ export default {
   data() {
     return {
       carousels: [
-        { category: 'street', src: 'street.jpg', loading },
-        { category: 'portrait', src: 'portrait.jpg', loading },
-        { category: 'landscape', src: 'landscape.jpg', loading },
-        { category: 'cycling', src: 'cycling.jpg', loading },
-        { category: 'live', src: 'live.jpg', loading },
-        { category: 'stilllife', src: 'stilllife.jpg', loading }
+        { category: 'street', src: 'street.jpg' },
+        { category: 'portrait', src: 'portrait.jpg' },
+        { category: 'landscape', src: 'landscape.jpg' },
+        { category: 'cycling', src: 'cycling.jpg' },
+        { category: 'live', src: 'live.jpg' },
+        { category: 'stilllife', src: 'stilllife.jpg' }
       ],
       pauseType: 'is-primary',
       interval: 5000,
