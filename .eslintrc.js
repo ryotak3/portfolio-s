@@ -18,7 +18,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     'prettier/prettier': [
-      'error',
+      'warn',
       {
         htmlWhitespaceSensitivity: 'ignore'
       }
