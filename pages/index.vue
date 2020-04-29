@@ -10,7 +10,7 @@
   >
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
       <a class="image vwmax" @click="goPhotography(carousel.category)">
-        <img v-lazy="carousel" alt="" />
+        <img v-lazy="carousel" alt />
       </a>
     </b-carousel-item>
   </b-carousel>
@@ -41,12 +41,12 @@ export default {
   data() {
     return {
       carousels: [
-        { category: 'street', src: 'street.jpg' },
-        { category: 'portrait', src: 'portrait.jpg' },
-        { category: 'landscape', src: 'landscape.jpg' },
-        { category: 'cycling', src: 'cycling.jpg' },
-        { category: 'live', src: 'live.jpg' },
-        { category: 'stilllife', src: 'stilllife.jpg' }
+        { category: 'street', src: 'top_street.jpg' },
+        { category: 'portrait', src: 'top_portrait.jpg' },
+        { category: 'landscape', src: 'top_landscape.jpg' },
+        { category: 'cycling', src: 'top_cycling.jpg' },
+        { category: 'live', src: 'top_live.jpg' },
+        { category: 'stilllife', src: 'top_stilllife.jpg' }
       ],
       pauseType: 'is-primary',
       interval: 5000,
