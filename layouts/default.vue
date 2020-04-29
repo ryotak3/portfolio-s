@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <b-navbar class="is-primary is-fixed-top">
+    <b-navbar class="is-primary is-fixed-top">
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           <p>weekendcycler</p>
@@ -33,9 +33,9 @@
           <b-icon icon="numeric-5-box" size="is-small"></b-icon>
         </b-navbar-item>
       </template>
-    </b-navbar>-->
+    </b-navbar>
     <!-- sidebar -->
-    <b-sidebar :mobile="mobile" :expand-on-hover="true" :reduce="true" type="is-black" open>
+    <!-- <b-sidebar :mobile="mobile" :expand-on-hover="true" :reduce="true" type="is-black" open>
       <div>
         <b-menu class="is-custom-mobile">
           <b-menu-list>
@@ -64,7 +64,7 @@
           </b-menu-list>
         </b-menu>
       </div>
-    </b-sidebar>
+    </b-sidebar>-->
     <!-- sidebar -->
 
     <section class="columns">
