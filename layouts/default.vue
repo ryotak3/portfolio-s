@@ -19,7 +19,7 @@
         <b-navbar-item href="https://weekenders.fm/">PODCAST</b-navbar-item>
         <b-navbar-item href="/biography">BIOGRAPHY</b-navbar-item>
         <b-navbar-item href="/about">ABOUT</b-navbar-item>
-        <b-navbar-item href="mailto:xxx@gmail.com">CONTACT</b-navbar-item>
+        <b-navbar-item href="mailto:weekendcycler1015@gmail.com">CONTACT</b-navbar-item>
         <b-navbar-item href="https://twitter.com/weekendcycler">
           <b-icon icon="twitter" size="is-small"></b-icon>
         </b-navbar-item>
