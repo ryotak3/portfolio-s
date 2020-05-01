@@ -9,9 +9,11 @@
     :indicator="false"
   >
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-      <a class="image vwmax" @click="goPhotography(carousel.category)">
-        <img v-lazy="carousel" alt />
-      </a>
+      <div class="contents">
+        <a class="image vwmax" @click="goPhotography(carousel.category)">
+          <img v-lazy="carousel" alt />
+        </a>
+      </div>
     </b-carousel-item>
   </b-carousel>
 </template>
@@ -62,10 +64,30 @@ export default {
 </script>
 <style>
 /* 全画面表示のための設定 */
-body {
-  overflow: hidden;
-}
 .vwmax {
+  height: 100vh;
+  width: 500vw;
+  position: relative;
+}
+.vwmax img {
+  height: 120vh;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+/* .vwmax {
+  height: 100vh;
+  width: 500vw;
+  margin-left: calc(-1 * ((2000px - 100vw) / 2));
+}
+.vwmax img {
+  height: 120vh;
+  width: auto;
+  position: relative;
+} */
+/* .vwmax {
   height: 100vh;
   width: auto;
   margin: 0 -500%;
@@ -81,5 +103,5 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
+} */
 </style>

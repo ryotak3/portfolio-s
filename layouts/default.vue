@@ -67,11 +67,7 @@
     </b-sidebar>-->
     <!-- sidebar -->
 
-    <section class="columns">
-      <div class="container column is-12">
-        <nuxt />
-      </div>
-    </section>
+    <nuxt />
   </div>
 </template>
 
