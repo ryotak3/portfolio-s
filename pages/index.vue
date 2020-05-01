@@ -70,7 +70,7 @@ export default {
   position: relative;
 }
 .vwmax img {
-  height: 120vh;
+  height: 160vh;
   width: auto;
   position: absolute;
   top: 50%;
