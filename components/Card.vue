@@ -4,12 +4,12 @@
       <article class="card block">
         <div class="card-image" @click="isImageModal = true">
           <figure class="image">
-            <img v-lazy="imgObj" alt />
+            <img v-lazy="imgObj" class="thumbimg" alt />
           </figure>
         </div>
       </article>
     </div>
-    <b-modal :active.sync="isImageModal">
+    <b-modal :active.sync="isImageModal" :width="modalwidth">
       <figure class="image">
         <img class="modalimg" :src="imgsrc" />
       </figure>
@@ -41,7 +41,8 @@ export default {
       isImageModal: false,
       imgObj: {
         src: this.imgsrc
-      }
+      },
+      modalwidth: 1280
     };
   }
 };
@@ -50,9 +51,14 @@ export default {
 .card {
   background-color: #222222;
 }
+.thumbimg {
+  max-height: 30vh;
+  width: auto;
+  margin: 0 auto;
+}
 .modalimg {
   width: auto;
   max-height: 90vh;
-  margin: auto;
+  margin: 0 auto;
 }
 </style>
