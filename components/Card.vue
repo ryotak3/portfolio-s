@@ -4,7 +4,7 @@
       <article class="card block">
         <div class="card-image" @click="isImageModal = true">
           <figure class="image">
-            <img v-lazy="imgObj" alt="" />
+            <img v-lazy="imgObj" alt />
           </figure>
         </div>
       </article>
@@ -52,7 +52,7 @@ export default {
 }
 .modalimg {
   width: auto;
-  max-height: 80vh;
+  max-height: 90vh;
   margin: auto;
 }
 </style>
