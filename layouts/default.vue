@@ -2,8 +2,8 @@
   <div>
     <b-navbar class="is-primary is-fixed-top">
       <template slot="brand">
-        <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <p>weekendcycler</p>
+        <b-navbar-item tag="router-link" :to="{ path: '/' }" class="logo">
+          <img class="logoimg" src="~assets/weekendcycler_logotype_shadow.png" alt="weekendcycler" />
         </b-navbar-item>
       </template>
       <template slot="end">
@@ -34,39 +34,6 @@
         </b-navbar-item>
       </template>
     </b-navbar>
-    <!-- sidebar -->
-    <!-- <b-sidebar :mobile="mobile" :expand-on-hover="true" :reduce="true" type="is-black" open>
-      <div>
-        <b-menu class="is-custom-mobile">
-          <b-menu-list>
-            <b-menu-item tag="router-link" :to="{ path: '/' }" label="weekendcycler"></b-menu-item>
-          </b-menu-list>
-          <b-menu-list>
-            <b-menu-item label="PHOTOGRAPHY">
-              <b-menu-item href="/photography?v=portrait" label="portrait"></b-menu-item>
-              <b-menu-item href="/photography?v=street" label="street"></b-menu-item>
-              <b-menu-item href="/photography?v=landscape" label="landscape"></b-menu-item>
-              <b-menu-item href="/photography?v=cycling" label="cycling"></b-menu-item>
-              <b-menu-item href="/photography?v=live" label="live"></b-menu-item>
-              <b-menu-item href="/photography?v=stilllife" label="still life"></b-menu-item>
-            </b-menu-item>
-            <b-menu-item href="http://weekendcycler.hateblo.jp/" label="BLOG"></b-menu-item>
-            <b-menu-item href="https://weekenders.fm/" label="PODCAST"></b-menu-item>
-            <b-menu-item href="/biography" label="BIOGRAPHY"></b-menu-item>
-            <b-menu-item href="/about" label="ABOUT"></b-menu-item>
-            <b-menu-item href="mailto:xxx@gmail.com" label="CONTACT"></b-menu-item>
-          </b-menu-list>
-          <b-menu-list>
-            <b-menu-item href="https://twitter.com/weekendcycler" icon="twitter"></b-menu-item>
-            <b-menu-item href="https://www.instagram.com/weekendcycler1015/" icon="instagram"></b-menu-item>
-            <b-menu-item href="https://www.flickr.com/photos/106693263@N04/" icon="image"></b-menu-item>
-            <b-menu-item href="https://500px.com/weekendcycler1015/" icon="numeric-5-box"></b-menu-item>
-          </b-menu-list>
-        </b-menu>
-      </div>
-    </b-sidebar>-->
-    <!-- sidebar -->
-
     <nuxt />
   </div>
 </template>
@@ -113,5 +80,11 @@ nav.navbar.is-fixed-top {
 }
 .b-sidebar .sidebar-content {
   background: transparent;
+}
+img.logoimg {
+  height: 38px;
+  width: 132px;
+  min-height: unset;
+  max-height: unset;
 }
 </style>
