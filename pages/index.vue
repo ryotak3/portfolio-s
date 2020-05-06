@@ -71,7 +71,7 @@ export default {
   position: relative;
 }
 .vwmax img.backimg {
-  height: 105vh;
+  height: 100vh;
   width: auto;
   position: absolute;
   top: 50%;
@@ -79,7 +79,7 @@ export default {
   transform: translate(-50%, -50%);
 }
 
-.vwmax img.logoimg {
+.vwmax img.logoimg2 {
   height: auto;
   width: 13%;
   position: absolute;
