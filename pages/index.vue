@@ -11,7 +11,8 @@
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
       <div class="contents">
         <a class="image vwmax" @click="goPhotography(carousel.category)">
-          <img v-lazy="carousel" alt />
+          <img v-lazy="carousel" class="backimg" alt />
+          <img class="logoimg" src="~assets/weekendcycler_logotype_2nd.png" alt="weekendcycler" />
         </a>
       </div>
     </b-carousel-item>
@@ -69,7 +70,7 @@ export default {
   width: 500vw;
   position: relative;
 }
-.vwmax img {
+.vwmax img.backimg {
   height: 105vh;
   width: auto;
   position: absolute;
@@ -77,31 +78,13 @@ export default {
   left: 10%;
   transform: translate(-50%, -50%);
 }
-/* .vwmax {
-  height: 100vh;
-  width: 500vw;
-  margin-left: calc(-1 * ((2000px - 100vw) / 2));
-}
-.vwmax img {
-  height: 120vh;
-  width: auto;
-  position: relative;
-} */
-/* .vwmax {
-  height: 100vh;
-  width: auto;
-  margin: 0 -500%;
-  padding: 0;
-  overflow: hidden;
-}
-.vwmax img {
-  width: auto;
-  height: 100vh;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+
+.vwmax img.logoimg {
+  height: auto;
+  width: 13%;
+  position: absolute;
+  top: 85%;
+  left: 7%;
   transform: translate(-50%, -50%);
-} */
+}
 </style>
