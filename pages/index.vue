@@ -79,11 +79,11 @@ export default {
   transform: translate(-50%, -50%);
 }
 
-.vwmax img.logoimg2 {
+.vwmax img.logoimg {
   height: auto;
   width: 13%;
   position: absolute;
-  top: 85%;
+  top: 80%;
   left: 7%;
   transform: translate(-50%, -50%);
 }
