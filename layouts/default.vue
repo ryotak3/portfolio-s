@@ -3,7 +3,8 @@
     <b-navbar class="is-primary is-fixed-top" transparent="true">
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }" class="logo">
-          <img class="logoimg" src="~assets/weekendcycler_logo_min.png" alt="weekendcycler" />
+          <p>weekendcycler</p>
+          <!-- <img class="logoimg" src="~assets/weekendcycler_logo_min.png" alt="weekendcycler" /> -->
         </b-navbar-item>
       </template>
       <template slot="end">
