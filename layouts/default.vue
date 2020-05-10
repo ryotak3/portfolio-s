@@ -21,18 +21,20 @@
         <!-- <b-navbar-item href="/biography">Biography</b-navbar-item> -->
         <b-navbar-item href="/about">About</b-navbar-item>
         <b-navbar-item href="mailto:weekendcycler1015@gmail.com">Contact</b-navbar-item>
-        <b-navbar-item href="https://twitter.com/weekendcycler">
-          <b-icon icon="twitter" size="is-small" class="icon"></b-icon>
-        </b-navbar-item>
-        <b-navbar-item href="https://www.instagram.com/weekendcycler1015/">
-          <b-icon icon="instagram" size="is-small" class="icon"></b-icon>
-        </b-navbar-item>
-        <b-navbar-item href="https://www.flickr.com/photos/106693263@N04/">
-          <b-icon icon="image" size="is-small" class="icon">></b-icon>
-        </b-navbar-item>
-        <b-navbar-item href="https://500px.com/weekendcycler1015/">
-          <b-icon icon="numeric-5-box" size="is-small" class="icon"></b-icon>
-        </b-navbar-item>
+        <div style="display: flex;">
+          <b-navbar-item href="https://twitter.com/weekendcycler">
+            <b-icon icon="twitter" size="is-small" class="icon"></b-icon>
+          </b-navbar-item>
+          <b-navbar-item href="https://www.instagram.com/weekendcycler1015/">
+            <b-icon icon="instagram" size="is-small" class="icon"></b-icon>
+          </b-navbar-item>
+          <b-navbar-item href="https://www.flickr.com/photos/106693263@N04/">
+            <b-icon icon="image" size="is-small" class="icon">></b-icon>
+          </b-navbar-item>
+          <b-navbar-item href="https://500px.com/weekendcycler1015/">
+            <b-icon icon="numeric-5-box" size="is-small" class="icon"></b-icon>
+          </b-navbar-item>
+        </div>
       </template>
     </b-navbar>
     <nuxt />
