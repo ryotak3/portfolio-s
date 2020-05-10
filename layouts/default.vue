@@ -74,11 +74,11 @@ body {
   font-weight: 400;
 }
 
-div.jp {
+.text-jp {
   font-family: '游明朝', 'YuMincho', 'Hiragino Mincho ProN W3',
     'ヒラギノ明朝 ProN W3';
 }
-div.en {
+.text-en {
   font-family: din-2014, sans-serif;
   font-style: normal;
   font-weight: 400;

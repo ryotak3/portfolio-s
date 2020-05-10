@@ -9,7 +9,7 @@
           <img src="~assets/about.jpg" />
         </div>
         <div class="column">
-          <div class="container jp">
+          <div class="container text-jp">
             <p>
               写真家。1988年埼玉県生まれ、茨城県育ち。
               北海道大学大学院情報エレクトロニクス学科コンピュータサイエンス専攻を卒業後、IT企業に就職。現在は東京都内でフロントエンドエンジニアとして働く傍ら、写真家としても活動。
@@ -24,7 +24,7 @@
               Skylum Luminar
             </p>
           </div>
-          <div class="container en">
+          <div class="container text-en">
             <p>
               Photographer. Born in Saitama Prefecture in 1988, raised in
               Ibaraki Prefecture. After graduating from the Department of
@@ -41,6 +41,18 @@
             <p>
               Software used: Adobe Lightroom Classic, Adobe Illustrator, Skylum
               Luminar
+            </p>
+          </div>
+          <div class="container en">
+            <a href="mailto:weekendcycler1015@gmail.com">
+              <b-icon icon="email" size="is-small" class="icon"></b-icon>
+            </a>
+            Contact
+            <p class="text-jp">お仕事のご依頼、作品に関するご感想など、お気軽にご連絡下さい。</p>
+
+            <p class="text-en">
+              Please feel free to contact me for work requests and your
+              impression of my work.
             </p>
           </div>
         </div>
