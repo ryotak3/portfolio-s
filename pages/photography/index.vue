@@ -1,6 +1,6 @@
 <template>
   <section id="myworks" class="section">
-    <div class="columns is-mobile is-centered is-multiline">
+    <div class="columns is-desktop is-centered is-multiline">
       <div v-for="(post, i) in filteredPosts" :key="i" class="column is-4">
         <card
           v-if="post.fields"
