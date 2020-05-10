@@ -9,7 +9,7 @@
           <img src="~assets/about.jpg" />
         </div>
         <div class="column">
-          <div class="container">
+          <div class="container jp">
             <p>
               写真家。1988年埼玉県生まれ、茨城県育ち。
               北海道大学大学院情報エレクトロニクス学科コンピュータサイエンス専攻を卒業後、IT企業に就職。現在は東京都内でフロントエンドエンジニアとして働く傍ら、写真家としても活動。
@@ -24,7 +24,7 @@
               Skylum Luminar
             </p>
           </div>
-          <div class="container">
+          <div class="container en">
             <p>
               Photographer. Born in Saitama Prefecture in 1988, raised in
               Ibaraki Prefecture. After graduating from the Department of

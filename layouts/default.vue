@@ -3,24 +3,24 @@
     <b-navbar class="is-primary is-fixed-top" transparent="true">
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <p>weekendcycler</p>
+          <p>Weekendcycler</p>
           <!-- <img class="logoimg" src="~assets/weekendcycler_logo_min.png" alt="weekendcycler" /> -->
         </b-navbar-item>
       </template>
       <template slot="end">
-        <b-navbar-dropdown label="PHOTOGRAPHY">
-          <b-navbar-item href="/photography?v=portrait">portrait</b-navbar-item>
-          <b-navbar-item href="/photography?v=street">street</b-navbar-item>
-          <b-navbar-item href="/photography?v=landscape">landscape</b-navbar-item>
-          <b-navbar-item href="/photography?v=cycling">cycling</b-navbar-item>
-          <b-navbar-item href="/photography?v=live">live</b-navbar-item>
-          <b-navbar-item href="/photography?v=stilllife">still life</b-navbar-item>
+        <b-navbar-dropdown label="Photography">
+          <b-navbar-item href="/photography?v=portrait">Portrait</b-navbar-item>
+          <b-navbar-item href="/photography?v=street">Street</b-navbar-item>
+          <b-navbar-item href="/photography?v=landscape">Landscape</b-navbar-item>
+          <b-navbar-item href="/photography?v=cycling">Cycling</b-navbar-item>
+          <b-navbar-item href="/photography?v=live">Live</b-navbar-item>
+          <b-navbar-item href="/photography?v=stilllife">Still Life</b-navbar-item>
         </b-navbar-dropdown>
-        <b-navbar-item href="http://weekendcycler.hateblo.jp/">BLOG</b-navbar-item>
-        <b-navbar-item href="https://weekenders.fm/">PODCAST</b-navbar-item>
-        <b-navbar-item href="/biography">BIOGRAPHY</b-navbar-item>
-        <b-navbar-item href="/about">ABOUT</b-navbar-item>
-        <b-navbar-item href="mailto:weekendcycler1015@gmail.com">CONTACT</b-navbar-item>
+        <b-navbar-item href="http://weekendcycler.hateblo.jp/">Blog</b-navbar-item>
+        <b-navbar-item href="https://weekenders.fm/">Podcast</b-navbar-item>
+        <b-navbar-item href="/biography">Biography</b-navbar-item>
+        <b-navbar-item href="/about">About</b-navbar-item>
+        <b-navbar-item href="mailto:weekendcycler1015@gmail.com">Contact</b-navbar-item>
         <b-navbar-item href="https://twitter.com/weekendcycler">
           <b-icon icon="twitter" size="is-small" class="icon"></b-icon>
         </b-navbar-item>
@@ -67,11 +67,19 @@ html {
 
 body {
   color: #ffffff;
+  font-family: din-2014, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
-p {
-  font-family: 'Avenir', 'Corbel', '游明朝', 'YuMincho',
-    'Hiragino Mincho ProN W3', 'ヒラギノ明朝 ProN W3';
+div.jp {
+  font-family: '游明朝', 'YuMincho', 'Hiragino Mincho ProN W3',
+    'ヒラギノ明朝 ProN W3';
+}
+div.en {
+  font-family: din-2014, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 span {
   color: #ffffff;
