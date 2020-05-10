@@ -22,16 +22,16 @@
         <b-navbar-item href="/about">ABOUT</b-navbar-item>
         <b-navbar-item href="mailto:weekendcycler1015@gmail.com">CONTACT</b-navbar-item>
         <b-navbar-item href="https://twitter.com/weekendcycler">
-          <b-icon icon="twitter" size="is-small"></b-icon>
+          <b-icon icon="twitter" size="is-small" class="icon"></b-icon>
         </b-navbar-item>
         <b-navbar-item href="https://www.instagram.com/weekendcycler1015/">
-          <b-icon icon="instagram" size="is-small"></b-icon>
+          <b-icon icon="instagram" size="is-small" class="icon"></b-icon>
         </b-navbar-item>
         <b-navbar-item href="https://www.flickr.com/photos/106693263@N04/">
-          <b-icon icon="image" size="is-small"></b-icon>
+          <b-icon icon="image" size="is-small" class="icon">></b-icon>
         </b-navbar-item>
         <b-navbar-item href="https://500px.com/weekendcycler1015/">
-          <b-icon icon="numeric-5-box" size="is-small"></b-icon>
+          <b-icon icon="numeric-5-box" size="is-small" class="icon"></b-icon>
         </b-navbar-item>
       </template>
     </b-navbar>
@@ -84,5 +84,10 @@ img.logoimg {
   width: 132px;
   min-height: unset;
   max-height: unset;
+}
+@media (max-width: 767px) {
+  .icon {
+    color: #666666;
+  }
 }
 </style>
