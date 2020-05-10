@@ -4,41 +4,45 @@
     <!-- Title -->
     <div class="section-heading">
       <h3 class="title is-2">About Me</h3>
-      <div>
-        <img src="~assets/about.jpg" />
-        <div class="container">
-          <p>
-            写真家。1988年埼玉県生まれ、茨城県育ち。
-            北海道大学大学院情報エレクトロニクス学科コンピュータサイエンス専攻を卒業後、IT企業に就職。現在は東京都内でフロントエンドエンジニアとして働く傍ら、写真家としても活動。
-          </p>
-          <p>
-            ライブ、カンファレンス、ストリートスナップ、サイクルアパレルブランドのイメージ写真など幅広く撮影。
-            自分の心が震える瞬間をカメラで切り取ることに喜びを感じる。
-            趣味は自転車で絶景を観に行くことと、珈琲を淹れること。
-          </p>
-          <p>
-            利用ソフトウェア: Adobe Lightroom Classic, Adobe Illustrator, Skylum
-            Luminar
-          </p>
+      <div class="columns is-desktop">
+        <div class="column is-3">
+          <img src="~assets/about.jpg" />
         </div>
-        <div class="container">
-          <p>
-            Photographer. Born in Saitama Prefecture in 1988, raised in Ibaraki
-            Prefecture. After graduating from the Department of Computer
-            Science, Graduate School of Information Electronics, Hokkaido
-            University, started working for an IT company.
-          </p>
-          <p>
-            Currently working as a front-end engineer in Tokyo, and also as a
-            photographer. Have wide range of photograph works, such as live,
-            conference, street snap, and cycle apparel brand image photos. Feel
-            joy with capturing the dramatic moment with camera. Like to see the
-            spectacular scenery by bike and brewing coffee on weekend.
-          </p>
-          <p>
-            Software used: Adobe Lightroom Classic, Adobe Illustrator, Skylum
-            Luminar
-          </p>
+        <div class="column">
+          <div class="container">
+            <p>
+              写真家。1988年埼玉県生まれ、茨城県育ち。
+              北海道大学大学院情報エレクトロニクス学科コンピュータサイエンス専攻を卒業後、IT企業に就職。現在は東京都内でフロントエンドエンジニアとして働く傍ら、写真家としても活動。
+            </p>
+            <p>
+              ライブ、カンファレンス、ストリートスナップ、サイクルアパレルブランドのイメージ写真など幅広く撮影。
+              自分の心が震える瞬間をカメラで切り取ることに喜びを感じる。
+              趣味は自転車で絶景を観に行くことと、珈琲を淹れること。
+            </p>
+            <p>
+              利用ソフトウェア: Adobe Lightroom Classic, Adobe Illustrator,
+              Skylum Luminar
+            </p>
+          </div>
+          <div class="container">
+            <p>
+              Photographer. Born in Saitama Prefecture in 1988, raised in
+              Ibaraki Prefecture. After graduating from the Department of
+              Computer Science, Graduate School of Information Electronics,
+              Hokkaido University, started working for an IT company.
+            </p>
+            <p>
+              Currently working as a front-end engineer in Tokyo, and also as a
+              photographer. Have wide range of photograph works, such as live,
+              conference, street snap, and cycle apparel brand image photos.
+              Feel joy with capturing the dramatic moment with camera. Like to
+              see the spectacular scenery by bike and brewing coffee on weekend.
+            </p>
+            <p>
+              Software used: Adobe Lightroom Classic, Adobe Illustrator, Skylum
+              Luminar
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -54,6 +58,7 @@ img {
 }
 .container {
   margin-left: 2rem;
+  margin-right: 2rem;
   margin-bottom: 1rem;
 }
 </style>
