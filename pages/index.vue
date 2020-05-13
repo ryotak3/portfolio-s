@@ -12,7 +12,17 @@
       <div class="contents">
         <a class="image vwmax" @click="goPhotography(carousel.category)">
           <img v-lazy="carousel" class="backimg" alt />
-          <img class="logoimg" src="~assets/weekendcycler_logotype_2nd.png" alt="weekendcycler" />
+          <template v-if="pcFlag">
+            <img
+              v-if="pcFlag"
+              class="logoimg"
+              src="~assets/weekendcycler_logotype_2nd.png"
+              alt="weekendcycler"
+            />
+          </template>
+          <template v-if="!pcFlag">
+            <img class="logoimg" src="~assets/weekendcycler_logo_sp_min.png" alt="weekendcycler" />
+          </template>
         </a>
       </div>
     </b-carousel-item>
@@ -53,12 +63,23 @@ export default {
       ],
       pauseType: 'is-primary',
       interval: 5000,
-      animated: 'fade'
+      animated: 'fade',
+      pcFlag: true
     };
+  },
+  mounted() {
+    this.checkPcFlag();
   },
   methods: {
     goPhotography(index) {
       this.$router.push({ path: `/photography/`, query: { v: index } });
+    },
+    checkPcFlag() {
+      if (window.innerWidth < 768) {
+        this.pcFlag = false;
+        return;
+      }
+      this.pcFlag = true;
     }
   }
 };
