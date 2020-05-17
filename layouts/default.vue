@@ -62,6 +62,9 @@ export default {
 };
 </script>
 <style>
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
 html {
   background-color: #222222;
   font-size: 1rem;
@@ -75,8 +78,7 @@ body {
 }
 
 .text-jp {
-  font-family: '游明朝', 'YuMincho', 'Hiragino Mincho ProN W3',
-    'ヒラギノ明朝 ProN W3';
+  font-family: 'Noto Sans Japanese', sans-serif;
 }
 .text-en {
   font-family: din-2014, sans-serif;
