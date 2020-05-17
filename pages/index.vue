@@ -21,7 +21,7 @@
             />
           </template>
           <template v-if="!pcFlag">
-            <img class="logoimg" src="~assets/weekendcycler_logo_sp_min.png" alt="weekendcycler" />
+            <img class="logoimg" src="~assets/weekendcycler_logotype_2nd.png" alt="weekendcycler" />
           </template>
         </a>
       </div>
