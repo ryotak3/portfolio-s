@@ -2,9 +2,9 @@
   <div>
     <b-navbar class="is-primary is-fixed-top" transparent="true">
       <template slot="brand">
-        <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <p>Weekendcycler</p>
-          <!-- <img class="logoimg" src="~assets/weekendcycler_logo_min.png" alt="weekendcycler" /> -->
+        <b-navbar-item tag="router-link" :to="{ path: '/' }" class="logo">
+          <!-- <p>Weekendcycler</p> -->
+          <img class="logoimg" src="~assets/weekendcycler_logotype_upperleft.png" alt="weekendcycler" />
         </b-navbar-item>
       </template>
       <template slot="end">
@@ -92,7 +92,7 @@ nav.navbar.is-fixed-top {
   background: transparent;
 }
 img.logoimg {
-  height: 38px;
+  height: 43px;
   width: 132px;
   min-height: unset;
   max-height: unset;
