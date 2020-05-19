@@ -90,7 +90,7 @@ nav.navbar.is-fixed-top {
   background: transparent;
 }
 img.logoimg {
-  height: 38px;
+  height: 43px;
   width: 132px;
   min-height: unset;
   max-height: unset;
