@@ -1,14 +1,16 @@
 <template>
   <div>
     <b-navbar class="is-primary is-fixed-top" transparent="true">
+      <img class="logoimg" src="~assets/weekendcycler_logotype_upperleft.png" alt="weekendcycler" />
       <template slot="brand">
-        <b-navbar-item tag="router-link" :to="{ path: '/' }" class="logo">
-          <!-- <p>Weekendcycler</p> -->
-          <img
-            class="logoimg"
-            src="~assets/weekendcycler_logotype_upperleft.png"
-            alt="weekendcycler"
-          />
+        <b-navbar-item tag="div">
+          <a href="/">
+            <img
+              class="logoimg"
+              src="~assets/weekendcycler_logotype_upperleft.png"
+              alt="weekendcycler"
+            />
+          </a>
         </b-navbar-item>
       </template>
       <template slot="end">
@@ -20,22 +22,22 @@
           <b-navbar-item href="/photography?v=live">Live</b-navbar-item>
           <b-navbar-item href="/photography?v=stilllife">Still Life</b-navbar-item>
         </b-navbar-dropdown>
-        <b-navbar-item href="http://weekendcycler.hateblo.jp/" target=”_blank”>Blog</b-navbar-item>
-        <b-navbar-item href="https://weekenders.fm/" target=”_blank”>Podcast</b-navbar-item>
+        <b-navbar-item href="http://weekendcycler.hateblo.jp/" target="_blank">Blog</b-navbar-item>
+        <b-navbar-item href="https://weekenders.fm/" target="_blank">Podcast</b-navbar-item>
         <!-- <b-navbar-item href="/biography">Biography</b-navbar-item> -->
         <b-navbar-item href="/about">About</b-navbar-item>
         <b-navbar-item href="mailto:weekendcycler1015@gmail.com">Contact</b-navbar-item>
         <div style="display: flex;">
-          <b-navbar-item href="https://twitter.com/weekendcycler" target=”_blank”>
+          <b-navbar-item href="https://twitter.com/weekendcycler" target="_blank">
             <b-icon icon="twitter" size="is-small" class="icon"></b-icon>
           </b-navbar-item>
-          <b-navbar-item href="https://www.instagram.com/weekendcycler1015/" target=”_blank”>
+          <b-navbar-item href="https://www.instagram.com/weekendcycler1015/" target="_blank">
             <b-icon icon="instagram" size="is-small" class="icon"></b-icon>
           </b-navbar-item>
-          <b-navbar-item href="https://www.flickr.com/photos/106693263@N04/" target=”_blank”>
+          <b-navbar-item href="https://www.flickr.com/photos/106693263@N04/" target="_blank">
             <b-icon icon="image" size="is-small" class="icon">></b-icon>
           </b-navbar-item>
-          <b-navbar-item href="https://500px.com/weekendcycler1015/" target=”_blank”>
+          <b-navbar-item href="https://500px.com/weekendcycler1015/" target="_blank">
             <b-icon icon="numeric-5-box" size="is-small" class="icon"></b-icon>
           </b-navbar-item>
         </div>
@@ -66,7 +68,6 @@ export default {
 };
 </script>
 <style>
-
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 html {
@@ -94,6 +95,9 @@ span {
 }
 nav.navbar.is-fixed-top {
   background: transparent;
+}
+.navbar-brand > .navbar-item > .navbar-link.is-active {
+  background-color: #ff0000;
 }
 img.logoimg {
   height: 43px;

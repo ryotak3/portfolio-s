@@ -1,5 +1,5 @@
 <template>
-  <svg
+  <!-- <svg
     class="NuxtLogo"
     width="245"
     height="180"
@@ -21,7 +21,7 @@
         fill-rule="nonzero"
       />
     </g>
-  </svg>
+  </svg>-->
 </template>
 <style>
 .NuxtLogo {
