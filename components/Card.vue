@@ -1,13 +1,11 @@
 <template>
   <section>
     <div style="margin-top:2rem;">
-      <article class="card block">
-        <div class="card-image" @click="isImageModal = true">
-          <figure class="image">
-            <img v-lazy="imgObj" class="thumbimg" alt />
-          </figure>
-        </div>
-      </article>
+      <div class="card-image" @click="isImageModal = true">
+        <figure class="image">
+          <img v-lazy="imgObj" class="thumbimg" alt />
+        </figure>
+      </div>
     </div>
     <b-modal :active.sync="isImageModal" :width="modalwidth">
       <figure class="image">
@@ -48,9 +46,6 @@ export default {
 };
 </script>
 <style scoped>
-.card {
-  background-color: #222222;
-}
 .thumbimg {
   max-height: 30vh;
   width: auto;
