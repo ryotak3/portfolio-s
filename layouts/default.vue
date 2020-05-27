@@ -4,7 +4,11 @@
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }" class="logo">
           <!-- <p>Weekendcycler</p> -->
-          <img class="logoimg" src="~assets/weekendcycler_logotype_upperleft.png" alt="weekendcycler" />
+          <img
+            class="logoimg"
+            src="~assets/weekendcycler_logotype_upperleft.png"
+            alt="weekendcycler"
+          />
         </b-navbar-item>
       </template>
       <template slot="end">
