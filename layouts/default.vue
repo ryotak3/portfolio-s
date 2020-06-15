@@ -44,6 +44,9 @@
       </template>
     </b-navbar>
     <nuxt />
+    <footer class="footer">
+      <p>Copyright © 2020 Weekendcycler All Rights Reserved.</p>
+    </footer>
   </div>
 </template>
 
@@ -80,6 +83,7 @@ body {
   font-family: din-2014, sans-serif;
   font-style: normal;
   font-weight: 400;
+  position: relative;
 }
 
 .text-jp {
@@ -89,6 +93,15 @@ body {
   font-family: din-2014, sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 10px;
+  background-color: transparent;
+  padding: 30px 0;
+  text-align: center;
 }
 span {
   color: #ffffff;
